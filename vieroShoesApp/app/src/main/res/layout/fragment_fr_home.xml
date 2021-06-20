@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".view.fragment.FrHome">
-
+<!--
    <LinearLayout
        android:background="@drawable/home_up_"
        android:layout_width="match_parent"
@@ -13,6 +13,7 @@
        android:orientation="vertical">
 
    </LinearLayout>
+   -->
 
     <LinearLayout
         android:layout_margin="5dp"

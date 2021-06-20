@@ -3,7 +3,7 @@
 
     <item android:id="@+id/home"
         android:icon="@drawable/ic_baseline_home_24"
-        android:title="Home" />
+        android:title="Viero Stocks" />
 
     <item android:id="@+id/order"
         android:icon="@drawable/ic_baseline_add_shopping_cart_24"

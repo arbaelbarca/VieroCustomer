@@ -81,6 +81,7 @@ public class FrHome extends Fragment {
         // LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(view.getContext()));
+       // GridLayoutManager gridLayoutManager = new GridLayoutManager(getApplicationContext(),3);
         //recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         //
 
