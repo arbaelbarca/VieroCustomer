@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.cindodcindy.vieroshoes.R;
 import com.cindodcindy.vieroshoes.model.ModelForItem;
+import com.cindodcindy.vieroshoes.view.Chat_page;
 import com.cindodcindy.vieroshoes.view.Order_page;
 
 import java.util.List;
@@ -50,7 +51,15 @@ public class AdapterHome extends RecyclerView.Adapter<AdapterHome.HomeChild> {
             }
         });
 
+    holder.imageView_chat.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
 
+            Intent intent = new Intent(context, Chat_page.class);
+            context.startActivity(intent);
+
+        }
+    });
     }
 
     @Override

@@ -9,7 +9,7 @@
    <LinearLayout
        android:background="@drawable/ill_eight"
        android:layout_width="match_parent"
-       android:layout_height="350dp"
+       android:layout_height="250dp"
        android:orientation="vertical">
 
    </LinearLayout>

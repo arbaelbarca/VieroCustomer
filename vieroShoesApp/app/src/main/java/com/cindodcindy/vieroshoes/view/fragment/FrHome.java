@@ -66,7 +66,6 @@ public class FrHome extends Fragment {
 
     private List<ModelForItem> modelForItems ;
     private RecyclerView recyclerView;
-    private LinearLayoutManager linearLayoutManager_dua;
     private AdapterHome adapterHome;
 
 
