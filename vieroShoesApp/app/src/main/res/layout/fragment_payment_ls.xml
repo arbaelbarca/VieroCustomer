@@ -7,9 +7,9 @@
     tools:context=".view.fragment.PaymentLsFr">
 
     <LinearLayout
-        android:background="@drawable/payment_list"
+        android:background="@drawable/hoe_up_tiga"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="150dp"
         android:orientation="vertical">
 
     </LinearLayout>
