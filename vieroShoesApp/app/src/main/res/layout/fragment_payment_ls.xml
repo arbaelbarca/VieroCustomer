@@ -4,15 +4,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".view.fragment.FrHome">
+    tools:context=".view.fragment.PaymentLsFr">
 
-   <LinearLayout
-       android:background="@drawable/ill_eight"
-       android:layout_width="match_parent"
-       android:layout_height="350dp"
-       android:orientation="vertical">
+    <LinearLayout
+        android:background="@drawable/payment_list"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:orientation="vertical">
 
-   </LinearLayout>
+    </LinearLayout>
 
     <LinearLayout
         android:layout_margin="5dp"
