@@ -85,6 +85,7 @@
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_go_to_list_sepatu"
                     android:background="@color/cardview_shadow_start_color"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -155,6 +156,7 @@
 
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_go_to_payment"
                     android:background="@color/cardview_shadow_start_color"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -311,6 +313,7 @@
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_go_to_order"
                     android:background="@color/cardview_shadow_start_color"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
