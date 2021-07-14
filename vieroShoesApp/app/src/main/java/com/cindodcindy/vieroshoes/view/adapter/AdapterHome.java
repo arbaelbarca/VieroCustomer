@@ -66,7 +66,7 @@ public class AdapterHome extends RecyclerView.Adapter<AdapterHome.HomeChild> {
     holder.imageView_maps.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            String uri = String.format(Locale.ENGLISH, "http://maps.google.com/maps?q=loc:%f,%f");
+            String uri = String.format(Locale.ENGLISH, "http://maps.google.com/maps");
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
             context.startActivity(intent);
         }
