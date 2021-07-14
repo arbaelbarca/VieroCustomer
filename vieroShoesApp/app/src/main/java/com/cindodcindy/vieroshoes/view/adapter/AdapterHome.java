@@ -2,6 +2,7 @@ package com.cindodcindy.vieroshoes.view.adapter;
 
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,6 +18,7 @@ import com.cindodcindy.vieroshoes.view.Chat_page;
 import com.cindodcindy.vieroshoes.view.Order_page;
 
 import java.util.List;
+import java.util.Locale;
 
 public class AdapterHome extends RecyclerView.Adapter<AdapterHome.HomeChild> {
 
@@ -60,6 +62,15 @@ public class AdapterHome extends RecyclerView.Adapter<AdapterHome.HomeChild> {
 
         }
     });
+
+    holder.imageView_maps.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            String uri = String.format(Locale.ENGLISH, "http://maps.google.com/maps?q=loc:%f,%f");
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
+            context.startActivity(intent);
+        }
+    });
     }
 
     @Override
@@ -70,10 +81,12 @@ public class AdapterHome extends RecyclerView.Adapter<AdapterHome.HomeChild> {
     public class HomeChild extends RecyclerView.ViewHolder{
        private TextView textView_nama_aitem;
 
-       private ImageView imageView_order, imageView_chat;
+       private ImageView  imageView_maps,imageView_order, imageView_chat;
+
 
         public HomeChild( View itemView) {
             super(itemView);
+            imageView_maps=itemView.findViewById(R.id.iv_go_to_maps);
             textView_nama_aitem=itemView.findViewById(R.id.tv_nama_barang);
             imageView_order=itemView.findViewById(R.id.iv_order);
             imageView_chat=itemView.findViewById(R.id.iv_chat);

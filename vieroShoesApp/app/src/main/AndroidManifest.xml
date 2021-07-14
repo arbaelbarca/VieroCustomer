@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.VieroShoes">
-        <activity android:name=".view.BottomNavActivity"></activity>
+        <activity android:name=".view.ListSepatu"></activity>
+        <activity android:name=".view.MenuBaruActivity" />
+        <activity android:name=".view.BottomNavActivity" />
         <activity android:name=".view.Chat_page" />
         <activity android:name=".view.Order_page" />
         <activity android:name=".view.Login" />
