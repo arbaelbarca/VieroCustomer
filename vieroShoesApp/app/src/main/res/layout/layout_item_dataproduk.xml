@@ -1,38 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_gravity="center"
-    android:gravity="center"
-    android:orientation="vertical"
-    tools:context=".view.Login">
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
         android:background="@color/cardview_shadow_start_color"
-        app:cardCornerRadius="2dp"
-        app:cardElevation="2dp"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardElevation="@dimen/_5sdp"
         app:cardUseCompatPadding="true">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:layout_margin="5dp"
-            android:gravity="center"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp">
 
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/profile_image"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:src="@drawable/viero_asset_dua"
-                app:civ_border_color="#FFC107"
-                app:civ_border_width="2dp" />
+            <ImageView
+                android:id="@+id/imgDataProduk"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/sepatu_satu">
+
+            </ImageView>
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
@@ -53,102 +51,98 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="vertical">
+                        android:orientation="horizontal">
 
                         <TextView
+                            android:id="@+id/tvNamaProduk"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
-                            android:text="Nama "
+                            android:text="Nama barang"
                             android:textColor="#009688"
                             android:textSize="12dp"
                             android:textStyle="bold">
 
                         </TextView>
 
-                        <EditText
-                            android:id="@+id/edNamaLogin"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="5dp"
-                            android:textColor="#009688"
-                            android:textSize="12dp"
-                            android:textStyle="bold">
 
-                        </EditText>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
 
                         <TextView
+                            android:id="@+id/tvHargaProduk"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
-                            android:text="Email"
+                            android:text="Harga"
                             android:textColor="#009688"
                             android:textSize="12dp"
                             android:textStyle="bold">
 
                         </TextView>
 
-                        <EditText
-                            android:id="@+id/edEmailLogin"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="5dp"
-                            android:inputType="textEmailAddress"
-                            android:textColor="#009688"
-                            android:textSize="12dp"
-                            android:textStyle="bold">
 
-                        </EditText>
+                    </LinearLayout>
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
 
                         <TextView
+                            android:id="@+id/tvDescProduk"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
-                            android:text="Password"
+                            android:text="Deskripsi"
                             android:textColor="#009688"
                             android:textSize="12dp"
                             android:textStyle="bold">
 
                         </TextView>
 
-                        <EditText
-                            android:id="@+id/edPassLogin"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="5dp"
-                            android:textColor="#009688"
-                            android:textSize="12dp"
-                            android:textStyle="bold">
 
-                        </EditText>
-
-                        <TextView
-                            android:id="@+id/tvForgotPass"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginTop="@dimen/_10sdp"
-                            android:layout_marginEnd="@dimen/_10sdp"
-                            android:layout_marginRight="@dimen/_10sdp"
-                            android:layout_marginBottom="@dimen/_10sdp"
-                            android:gravity="center|right"
-                            android:text="Forgot Password"
-                            android:textColor="#DA002A" />
-
-                        <Button
-                            android:id="@+id/btn_login"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Login"
-                            android:textColor="#5E5757">
-
-                        </Button>
                     </LinearLayout>
 
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnBeliProduk"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_weight="1.6"
+                            android:text="Beli"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <Button
+                            android:id="@+id/btnWaProduk"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_weight="1"
+                            android:text="Chat Whatsapp"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_10sdp" />
+
+                    </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>

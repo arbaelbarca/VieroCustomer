@@ -14,7 +14,7 @@
         android:orientation="vertical">
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_order_cst"
+            android:id="@+id/rvMyOrder"
             android:layout_margin="2dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
